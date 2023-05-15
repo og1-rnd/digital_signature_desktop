@@ -1,0 +1,17 @@
+.app-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    svg {
+        max-height: 26px;
+        width: auto;
+    }
+
+    &-primary {
+        svg path {
+            stroke: #fff;
+        }
+    }
+}

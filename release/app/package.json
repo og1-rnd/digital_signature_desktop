@@ -1,0 +1,24 @@
+{
+  "name": "eds",
+  "version": "1.0.0",
+  "productName": "ЭЦП",
+  "description": "ЭЦП - простая, удобная, бесплатная технология электронной подписи",
+  "author": {
+    "name": "Онлайн Гимназия №1",
+    "email": "info@og1.ru"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.eds/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.eds/scripts/link-modules.ts"
+  },
+  "dependencies": {
+    "bip39": "^3.1.0",
+    "ethers": "^6.2.3",
+    "hdkey": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/hdkey": "^2.0.1"
+  }
+}

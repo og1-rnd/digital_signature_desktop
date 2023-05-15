@@ -1,0 +1,62 @@
+.signing-input-section{
+  &-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 16px;
+    gap: 12px;
+
+    &_isMobile{
+      margin-bottom: 0
+    }
+  }
+
+  &-input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .app-input{
+      width: 100%;
+
+      textarea {
+        resize: none;
+      }
+    }
+
+    &-icon{
+      position: absolute;
+      right: -32px;
+    }
+  }
+
+  &-popover{
+    display: flex;
+    flex-direction: row;
+    max-width: 350px;
+    padding: 15px 5px;
+    gap: 8px;
+
+    &_isMobile{
+      padding: 0;
+    }
+
+    &-block{
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+
+      .app-text {
+        flex: 1;
+      }
+    }
+
+    &-dot{
+      margin-top: 4px;
+      height: 8px;
+      width: 8px;
+      border-radius: 4px;
+      background-color: var(--color-grey-inactive);
+    }
+  }
+}

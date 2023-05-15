@@ -1,0 +1,23 @@
+.app-input{
+    > .ant-input,
+    > .ant-input-password{
+        height: 40px !important;
+        padding: 10px 12px;
+        font-size: 15px !important;
+        line-height: 20px !important;
+    }
+
+    &_isTextArea{
+        > .ant-input{
+            height: unset !important;
+        }
+    }
+
+    &_isSmall{
+        > .ant-input,
+        > .ant-input-password {
+            font-size: 13px !important;
+            line-height: 15.6px !important;
+        }
+    }
+}

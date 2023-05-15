@@ -1,0 +1,85 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/SourceSansPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+
+body {
+  display: flex;
+  position: relative;
+  color: white;
+  font-family: sans-serif;
+  background: var(--color-dashboard);
+}
+
+
+#root{
+  display: flex;
+  flex: 1;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#root::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+:root {
+  --blue-border: #D3E0EF;
+  --color-link: #0088e9;
+  --color-essential: #fff;
+  --color-dashboard: #f9fafd;
+  --color-stroke-maingray: #eef4fb;
+  --color-main-black: #252232;
+  --color-red-main: #ea5959;
+  --color-grey-inactive: #c0c2c9;
+  --color-main-dark-icons: #585c6f;
+}

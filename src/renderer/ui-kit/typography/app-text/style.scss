@@ -1,0 +1,93 @@
+.app-text{
+  font-family: Source Sans Pro;
+
+  &.blue-mark{
+        background: #EEF4FB;
+        border: none;
+        color: #0088E9;
+        padding: 5px 15px;
+        border-radius: 6px;
+        max-width: max-content;
+    }
+    &.fontbutton {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &.footnotes {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    &.descriptor{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        color: #919399;
+    }
+    &.fontBody {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &.main {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &.H5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    &.H4 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    &.H3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 125%;
+        &_isAdaptive{
+            font-weight: 400;
+        }
+    }
+    &.H2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+
+        &_isAdaptive{
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    &.H1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    &.Title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &_isSecondary{
+        color: #919399 !important;
+    }
+    &_isBold{
+        font-weight: 600 !important;
+    }
+}

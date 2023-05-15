@@ -1,0 +1,31 @@
+.signing-input-section{
+  padding-right: 32px;
+
+  &-header{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  &-block {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 8px;
+    gap: 16px;
+
+    .app-button{
+      width: 100%;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 16px;
+    gap: 12px;
+  }
+}

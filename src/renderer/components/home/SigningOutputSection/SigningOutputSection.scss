@@ -1,0 +1,38 @@
+.signing-output-section{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &-block{
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+  }
+
+  &-address-title{
+    display: flex;
+    gap: 4px
+  }
+
+  &-icon{
+    display: flex;
+    justify-content: center;
+    &_isAddressVisible{
+      transform: rotate(180deg);
+    }
+  }
+
+  &-divider{
+    height: 1px;
+    width: 100%;
+    background-color: var(--blue-border);
+  }
+
+  &-title{
+    display: flex;
+    align-items: center;
+    .app-text{
+      text-align: center;
+    }
+  }
+}

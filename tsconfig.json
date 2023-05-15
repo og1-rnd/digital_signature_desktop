@@ -1,0 +1,32 @@
+{
+  "include": ["**/*", "**/.*"],
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2021",
+    "module": "commonjs",
+    "lib": ["dom", "es2021"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": ".eds/dll",
+    "paths": {
+      "@ui-kit": ["renderer/ui-kit"],
+      "@ui-kit/*": ["renderer/ui-kit/*"],
+      "@screens": ["renderer/screens"],
+      "@screens/*": ["renderer/screens/*"],
+      "@components": ["renderer/components"],
+      "@components/*": ["renderer/components/*"],
+      "@utils": ["renderer/utils"],
+      "@utils/*": ["renderer/utils/*"],
+      "@assets": ["../assets"],
+      "@assets/*": ["../assets/*"]
+    }
+  },
+  "exclude": ["test", "release/build", "release/app/dist", ".eds/dll"]
+}
